@@ -28,5 +28,46 @@
     position:relative;
     left:50%;
     transform: translateX(-50%);
+    background:linear-gradient(to left,green,red,yellow);
+    color:rgb(222, 213, 213);
+    font-weight: bolder;
+    transition: all 1s ease;
     
+}
+#restartGame:hover{
+    cursor: pointer;
+    background: linear-gradient(to left,yellow,red,green);
+
+}
+
+#resultDiv{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+ h1{
+    margin: 0;
+ }
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: bolder;
+    font-size: larger;
+    margin-bottom: .3em;
+}
+
+.tik{
+    color: green;
+}
+.tak{
+    color:red;
+}
+.toe{
+    color: yellow;
+
+}
+
+.sas{
+    background-color: red;
 }

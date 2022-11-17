@@ -87,7 +87,7 @@ function App(props) {
         <Button value={sign[8]} onClick={() => clickHandler(8)}/>
     </Board>
     <div id='resultDiv'>
-    <h2 style={{color:'white'}}>Result: &nbsp;</h2><h2 style={{color:resultColor}}>{result}</h2>
+    <h2 style={{color:'white'}}>Result: &nbsp;</h2><h2 className='winner' style={{color:resultColor}}>{result}</h2>
     </div>
     <button id='restartGame' onClick={restartGameHandler}>Restart game</button>
     </div>

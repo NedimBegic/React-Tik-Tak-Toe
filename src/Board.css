@@ -1,0 +1,32 @@
+
+*{
+    box-sizing: border-box;
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.board{
+    width: 30em;
+    height: 30em;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;  
+}
+
+#restartGame{
+    width:10em;
+    height: 3em;
+    border-radius: 10px;
+    border: none;
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+    
+}

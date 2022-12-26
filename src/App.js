@@ -72,7 +72,7 @@ function App(props) {
     signChange(Array(9).fill(null))
    }
   return (
-    <div>
+    <div className='all'>
       <div className='heading'><h1 className='tik'>Tik</h1>/<h1 className='tak'>Tak</h1>/<h1 className='toe'>Toe</h1></div>
       <Score pointX={scoreX} pointO={scoreO}/>
       <Board>

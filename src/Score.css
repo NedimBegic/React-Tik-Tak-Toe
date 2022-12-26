@@ -28,3 +28,16 @@
         left:3em;
     }  
 }
+
+@media (min-width:350px) and (max-width:510px) {
+    .score{
+        width:30em;
+        margin-left: 4em;
+    }
+}
+
+@media (min-width:1500px) {
+    .score{
+        margin-right: 5em;
+    }
+}

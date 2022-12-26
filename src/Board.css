@@ -4,10 +4,11 @@
 
 #root{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
-    width: 100vw;
+    width: 60em;
+    max-width: 40em;
     text-align: center;
 }
 
@@ -17,6 +18,7 @@
     display:grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;  
+    
 }
 
 #restartGame{
@@ -71,7 +73,7 @@
 }
 
 
-@media screen and (max-width:350px) {
+@media (max-width:350px) {
 
     .heading{
         position:absolute;
@@ -84,7 +86,7 @@
         align-items: center;
     }
     .board{
-        width: 5em;
+        width:90%;
         height: 5em;
         position: absolute;
         left: 0em;
@@ -116,4 +118,69 @@
         left: 18em;
     }
     
+}
+
+@media (min-width:350px) and (max-width:510px) {
+    .all{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .heading{
+        margin-top: 4em;
+        margin-left: 4em;
+    }
+
+    .board{
+        width:90%;
+        max-width: 30em;
+        margin-right: 4em;
+        
+    }
+    #root{
+        width: 100%;
+    }
+
+    #restartGame{
+        position:relative;
+        left:30%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (min-width:510px) and (max-width:1500px) {
+    .all{
+        height:50em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width:50em;
+        max-width: 60em;
+
+    }
+
+    .board{
+        position: relative;
+        left: 15%;
+    }
+
+    .heading{
+        margin-top: 5em;
+    }
+}
+
+@media (min-width:1500px) {
+    .heading{
+        margin-top: -20em;
+        margin-right: 4em;
+    }
+    
+    #resultDiv{
+        margin-right: 8em;
+    }
+    #restartGame{
+        position: absolute;
+        left:50%;
+        transform: translateX(-120%);
+    }
 }
